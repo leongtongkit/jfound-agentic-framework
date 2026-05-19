@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 880" font-family="'SF Pro Display','Helvetica Neue',Arial,sans-serif">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#5A6477"/>
+    </marker>
+    <marker id="ahA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#E8A33D"/>
+    </marker>
+    <marker id="ahL" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#5B8DEF"/>
+    </marker>
+    <linearGradient id="loop" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#5B8DEF"/><stop offset="1" stop-color="#7C5CFF"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1180" height="880" fill="#0B0E14"/>
+  <rect x="16" y="16" width="1148" height="848" rx="20" fill="none" stroke="#1C2230"/>
+
+  <!-- header -->
+  <text x="60" y="66" fill="#7E8699" font-size="12" letter-spacing="3">JFOUND · AGENTIC FRAMEWORK</text>
+  <text x="60" y="104" fill="#EAEDF3" font-size="30" font-weight="700">The loop</text>
+  <text x="60" y="130" fill="#7E8699" font-size="14">Give a goal, not a script. Every pass leaves the agent sharper than it found it.</text>
+
+  <!-- ===================== SPINE ===================== -->
+  <rect x="208" y="168" width="264" height="50" rx="25" fill="#141A24" stroke="#33405B"/>
+  <text x="340" y="199" text-anchor="middle" fill="#EAEDF3" font-size="16" font-weight="600">You give a GOAL</text>
+
+  <path d="M340 218 V 254" stroke="#39414F" stroke-width="1.5" fill="none" marker-end="url(#ah)"/>
+
+  <!-- PRE-FLIGHT -->
+  <rect x="96" y="256" width="488" height="150" rx="14" fill="#11161F" stroke="#232A38"/>
+  <text x="120" y="285" fill="#7E8699" font-size="11" letter-spacing="2.5">PHASE 1</text>
+  <text x="186" y="285" fill="#EAEDF3" font-size="15" font-weight="700">Pre-flight</text>
+  <g font-size="13">
+    <circle cx="128" cy="316" r="3" fill="#5B8DEF"/><text x="142" y="320" fill="#C7CCD8">Drain the memory inbox — keep signal, discard noise</text>
+    <circle cx="128" cy="344" r="3" fill="#5B8DEF"/><text x="142" y="348" fill="#C7CCD8">Read both stores</text>
+    <circle cx="128" cy="372" r="3" fill="#E8A33D"/><text x="142" y="376" fill="#C7CCD8">State the plan + what “done” means —<tspan fill="#E8A33D" font-weight="600"> veto gate</tspan></text>
+  </g>
+
+  <path d="M340 406 V 446" stroke="#39414F" stroke-width="1.5" fill="none" marker-end="url(#ah)"/>
+
+  <!-- EXECUTE -->
+  <rect x="96" y="448" width="488" height="158" rx="14" fill="#11161F" stroke="#232A38"/>
+  <text x="120" y="477" fill="#7E8699" font-size="11" letter-spacing="2.5">PHASE 2</text>
+  <text x="186" y="477" fill="#EAEDF3" font-size="15" font-weight="700">Execute</text>
+  <text x="120" y="505" fill="#C7CCD8" font-size="13">Decompose → graph · parallel-safe leaves overlap · dependents in order</text>
+  <g font-size="12.5" font-weight="600">
+    <rect x="120" y="522" width="138" height="62" rx="10" fill="#0F1A12" stroke="#1F3D26"/>
+    <circle cx="140" cy="546" r="4" fill="#4ADE80"/><text x="154" y="550" fill="#9BE7B4">Green</text>
+    <text x="134" y="572" fill="#6E7B70" font-size="11" font-weight="400">just do it</text>
+
+    <rect x="270" y="522" width="138" height="62" rx="10" fill="#1C1707" stroke="#3D3210"/>
+    <circle cx="290" cy="546" r="4" fill="#FACC15"/><text x="304" y="550" fill="#E8D08A">Yellow</text>
+    <text x="284" y="572" fill="#7E7556" font-size="11" font-weight="400">do it, then report</text>
+
+    <rect x="420" y="522" width="142" height="62" rx="10" fill="#1E0F0F" stroke="#3D1F1F"/>
+    <circle cx="440" cy="546" r="4" fill="#F87171"/><text x="454" y="550" fill="#F0A8A8">Red</text>
+    <text x="434" y="572" fill="#7E5A5A" font-size="11" font-weight="400">stop and ask</text>
+  </g>
+
+  <!-- circuit breaker -->
+  <path d="M340 606 V 632" stroke="#39414F" stroke-width="1.5" fill="none" marker-end="url(#ah)"/>
+  <rect x="232" y="634" width="216" height="40" rx="20" fill="#1A1206" stroke="#5A4111"/>
+  <text x="340" y="659" text-anchor="middle" fill="#E8A33D" font-size="13" font-weight="600">circuit-breaker · halts, never grinds</text>
+  <path d="M340 674 V 700" stroke="#39414F" stroke-width="1.5" fill="none" marker-end="url(#ah)"/>
+
+  <!-- WRITE-BACK -->
+  <rect x="96" y="702" width="488" height="132" rx="14" fill="#11161F" stroke="#232A38"/>
+  <text x="120" y="730" fill="#7E8699" font-size="11" letter-spacing="2.5">PHASE 3</text>
+  <text x="186" y="730" fill="#EAEDF3" font-size="15" font-weight="700">Write back · closes the loop</text>
+  <text x="120" y="758" fill="#C7CCD8" font-size="13">session-journal hook — one cheap-model call, two outputs:</text>
+  <g font-size="12.5">
+    <circle cx="128" cy="784" r="3" fill="#5B8DEF"/><text x="142" y="788" fill="#C7CCD8">journal in your voice → personal notes</text>
+    <circle cx="128" cy="808" r="3" fill="#E8A33D"/><text x="142" y="812" fill="#C7CCD8">tagged deltas → memory inbox (staged, not trusted yet)</text>
+  </g>
+
+  <!-- ===================== MEMORY COLUMN ===================== -->
+  <text x="668" y="200" fill="#7E8699" font-size="11" letter-spacing="2.5">TWO STORES</text>
+
+  <rect x="668" y="216" width="416" height="92" rx="14" fill="#101826" stroke="#27405E"/>
+  <text x="692" y="252" fill="#EAEDF3" font-size="15" font-weight="700">Personal notes</text>
+  <text x="692" y="276" fill="#5B8DEF" font-size="12.5" font-weight="600">authority on intent</text>
+  <text x="692" y="296" fill="#7E8699" font-size="12">your voice — what you want, your priorities</text>
+
+  <rect x="668" y="324" width="416" height="92" rx="14" fill="#101826" stroke="#27405E"/>
+  <text x="692" y="360" fill="#EAEDF3" font-size="15" font-weight="700">Agent memory</text>
+  <text x="692" y="384" fill="#5B8DEF" font-size="12.5" font-weight="600">authority on fact</text>
+  <text x="692" y="404" fill="#7E8699" font-size="12">technical state, what was tried, its model of you</text>
+
+  <text x="668" y="446" fill="#7E8699" font-size="12">On conflict: <tspan fill="#C7CCD8">notes win on intent · memory wins on fact</tspan></text>
+
+  <rect x="668" y="470" width="416" height="86" rx="14" fill="#1A1206" stroke="#5A4111" stroke-dasharray="5 4"/>
+  <text x="692" y="504" fill="#E8A33D" font-size="15" font-weight="700">Memory inbox</text>
+  <text x="692" y="526" fill="#7E8699" font-size="12">staging only — cheap model proposes here</text>
+  <text x="692" y="544" fill="#7E8699" font-size="12">capable model reviews &amp; merges at next pre-flight</text>
+
+  <!-- pre-flight reads stores -->
+  <path d="M584 331 H 664" stroke="#5A6477" stroke-width="1.5" fill="none" marker-end="url(#ah)"/>
+  <text x="600" y="324" fill="#7E8699" font-size="11">reads</text>
+
+  <!-- write-back writes memory (accent, up the gutter) -->
+  <path d="M584 760 H 636 V 262 H 664" stroke="#E8A33D" stroke-width="1.5" fill="none" marker-end="url(#ahA)" opacity="0.85"/>
+  <text x="628" y="500" fill="#E8A33D" font-size="11" transform="rotate(-90 628 500)">writes</text>
+
+  <!-- ===================== COMPOUND RETURN LOOP ===================== -->
+  <path d="M96 760 H 52 V 193 H 204" fill="none" stroke="url(#loop)" stroke-width="2.5" marker-end="url(#ahL)"/>
+  <text x="40" y="500" fill="#8C9BD6" font-size="12.5" font-weight="600" letter-spacing="1" transform="rotate(-90 40 500)">compounds — next session starts sharper</text>
+
+  <!-- footer -->
+  <text x="668" y="600" fill="#7E8699" font-size="12">The review at pre-flight is the quality gate —</text>
+  <text x="668" y="620" fill="#7E8699" font-size="12">it is what keeps memory signal, not noise.</text>
+  <text x="668" y="828" fill="#525A6B" font-size="11">MIT · github.com/leongtongkit/jfound-agentic-framework</text>
+</svg>
