@@ -1,3 +1,12 @@
 .DS_Store
 *.log
 hooks/session-journal/journal.log
+
+# Local editor / tooling config — not part of the project
+CLAUDE.md
+.claude/
+.cursor/
+.cursorrules
+.windsurfrules
+.aider*
+.github/copilot-instructions.md
